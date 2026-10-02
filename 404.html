@@ -20,22 +20,23 @@ h1{font-weight:200;font-size:clamp(38px,11vw,56px);line-height:1.06;letter-spaci
 .line{height:1px;background:#333;overflow:hidden}
 .line span{display:block;height:100%;background:#fff;transform-origin:left;transform:scaleX(0);animation:fill 2s linear forwards}
 @keyframes fill{to{transform:scaleX(1)}}
-.base{display:flex;flex-direction:column;gap:16px}
+.base{display:flex;align-items:flex-end;justify-content:space-between;gap:24px}
 .base p{font-size:15px;color:#b3b3b3;line-height:1.45;letter-spacing:.008em;max-width:34ch}
 a{color:#fff;text-decoration:none}
 .nw{white-space:nowrap}
-.go{font-size:15px;letter-spacing:.012em;display:inline-flex;align-items:center;gap:10px;min-height:44px;align-self:flex-start}
-.go svg{width:14px;height:14px;transition:transform .18s cubic-bezier(.22,1,.36,1)}
-.go:active svg{transform:translate(3px,-3px)}
+.go{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px}
+.go svg{width:48px;height:48px;transition:transform .18s cubic-bezier(.22,1,.36,1)}
+.go:active svg{transform:translate(4px,-4px)}
 a:focus-visible{outline:1px solid #fff;outline-offset:6px}
 @media (min-width:701px){
  body{padding:32px 4%}
  .brand img{width:54px}
  main{gap:32px;padding-bottom:8px}
  h1{font-size:clamp(56px,7.2vw,104px);line-height:1.04;max-width:16ch}
- .base{flex-direction:row;align-items:flex-end;justify-content:space-between;gap:32px}
- .base p,.go{font-size:16px}
- .go:hover svg,.go:focus-visible svg{transform:translate(3px,-3px)}
+ .base{gap:32px}
+ .base p{font-size:16px}
+ .go svg{width:72px;height:72px}
+ .go:hover svg,.go:focus-visible svg{transform:translate(6px,-6px)}
 }
 @media (prefers-reduced-motion:reduce){.line span{animation:none;transform:scaleX(1)}.go svg{transition:none}}
 </style>
@@ -47,7 +48,7 @@ a:focus-visible{outline:1px solid #fff;outline-offset:6px}
 <div class="line" aria-hidden="true"><span></span></div>
 <div class="base">
 <p><span class="nw">www.de-stuff.com</span>.</p>
-<a class="go" href="https://www.de-stuff.com/"><span>Ir para <span class="nw">www.de-stuff.com</span></span> <svg viewBox="0 0 14 14" aria-hidden="true"><path d="M3 11 11 3M5 3h6v6" fill="none" stroke="currentColor" stroke-width="1"/></svg></a>
+<a class="go" href="https://www.de-stuff.com/" aria-label="Ir para www.de-stuff.com"><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M3 11 11 3M5 3h6v6" fill="none" stroke="currentColor" stroke-width="1.5" vector-effect="non-scaling-stroke"/></svg></a>
 </div>
 </main>
 <script>
