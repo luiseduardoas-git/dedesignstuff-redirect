@@ -23,6 +23,7 @@ h1{font-weight:200;font-size:clamp(38px,11vw,56px);line-height:1.06;letter-spaci
 .base{display:flex;flex-direction:column;gap:16px}
 .base p{font-size:15px;color:#b3b3b3;line-height:1.45;letter-spacing:.008em;max-width:34ch}
 a{color:#fff;text-decoration:none}
+.nw{white-space:nowrap}
 .go{font-size:15px;letter-spacing:.012em;display:inline-flex;align-items:center;gap:10px;min-height:44px;align-self:flex-start}
 .go svg{width:14px;height:14px;transition:transform .18s cubic-bezier(.22,1,.36,1)}
 .go:active svg{transform:translate(3px,-3px)}
@@ -45,8 +46,8 @@ a:focus-visible{outline:1px solid #fff;outline-offset:6px}
 <h1>Hey, nós mudamos de endereço.</h1>
 <div class="line" aria-hidden="true"><span></span></div>
 <div class="base">
-<p>Agora estamos em www.de-stuff.com.</p>
-<a class="go" href="https://www.de-stuff.com/">Ir para www.de-stuff.com <svg viewBox="0 0 14 14" aria-hidden="true"><path d="M3 11 11 3M5 3h6v6" fill="none" stroke="currentColor" stroke-width="1"/></svg></a>
+<p>Agora estamos em <span class="nw">www.de-stuff.com</span>.</p>
+<a class="go" href="https://www.de-stuff.com/">Ir para <span class="nw">www.de-stuff.com</span> <svg viewBox="0 0 14 14" aria-hidden="true"><path d="M3 11 11 3M5 3h6v6" fill="none" stroke="currentColor" stroke-width="1"/></svg></a>
 </div>
 </main>
 <script>
