@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>De.Stuff | Novo endereço: www.de-stuff.com</title>
+<meta name="description" content="A De.Stuff mudou de endereço. Agora estamos em www.de-stuff.com.">
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#000000">
+<link rel="canonical" href="https://www.de-stuff.com/">
+<noscript><meta http-equiv="refresh" content="2;url=https://www.de-stuff.com/"></noscript>
+<style>
+/* Celular primeiro; telas maiores a partir de 701px. */
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:#000;color:#fff}
+body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:300;-webkit-font-smoothing:antialiased;display:flex;flex-direction:column;justify-content:space-between;min-height:100svh;padding:24px 6% calc(24px + env(safe-area-inset-bottom))}
+.brand img{display:block;width:48px;height:auto}
+main{display:flex;flex-direction:column;gap:24px}
+h1{font-weight:200;font-size:clamp(38px,11vw,56px);line-height:1.06;letter-spacing:.005em;max-width:12ch}
+.line{height:1px;background:#333;overflow:hidden}
+.line span{display:block;height:100%;background:#fff;transform-origin:left;transform:scaleX(0);animation:fill 2s linear forwards}
+@keyframes fill{to{transform:scaleX(1)}}
+.base{display:flex;flex-direction:column;gap:16px}
+.base p{font-size:15px;color:#b3b3b3;line-height:1.45;letter-spacing:.008em;max-width:34ch}
+a{color:#fff;text-decoration:none}
+.go{font-size:15px;letter-spacing:.012em;display:inline-flex;align-items:center;gap:10px;min-height:44px;align-self:flex-start}
+.go svg{width:14px;height:14px;transition:transform .18s cubic-bezier(.22,1,.36,1)}
+.go:active svg{transform:translate(3px,-3px)}
+a:focus-visible{outline:1px solid #fff;outline-offset:6px}
+@media (min-width:701px){
+ body{padding:32px 4%}
+ .brand img{width:54px}
+ main{gap:32px;padding-bottom:8px}
+ h1{font-size:clamp(56px,7.2vw,104px);line-height:1.04;max-width:16ch}
+ .base{flex-direction:row;align-items:flex-end;justify-content:space-between;gap:32px}
+ .base p,.go{font-size:16px}
+ .go:hover svg,.go:focus-visible svg{transform:translate(3px,-3px)}
+}
+@media (prefers-reduced-motion:reduce){.line span{animation:none;transform:scaleX(1)}.go svg{transition:none}}
+</style>
+</head>
+<body>
+<div class="brand"><a href="https://www.de-stuff.com/" aria-label="De.Stuff, novo endereço"><img src="https://www.de-stuff.com/assets/logo.png" alt="De.Stuff" width="400" height="202"></a></div>
+<main>
+<h1>A De.Stuff mudou de endereço.</h1>
+<div class="line" aria-hidden="true"><span></span></div>
+<div class="base">
+<p>Agora estamos em www.de-stuff.com. O e-mail continua o mesmo.</p>
+<a class="go" href="https://www.de-stuff.com/">Ir para www.de-stuff.com <svg viewBox="0 0 14 14" aria-hidden="true"><path d="M3 11 11 3M5 3h6v6" fill="none" stroke="currentColor" stroke-width="1"/></svg></a>
+</div>
+</main>
+<script>
+(function(){var d=matchMedia('(prefers-reduced-motion: reduce)').matches?0:2000;setTimeout(function(){location.replace('https://www.de-stuff.com/')},d);})();
+</script>
+</body>
+</html>
